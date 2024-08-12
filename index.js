@@ -1,3 +1,19 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const videoElements = document.querySelectorAll("video");
+
+  videoElements.forEach(function (videoElement) {
+    videoElement.controls = false;
+
+    videoElement.addEventListener("play", function () {
+      this.controls = false;
+    });
+
+    videoElement.addEventListener("pause", function () {
+      this.controls = false;
+    });
+  });
+});
+
 document
   .querySelector(".play-now-button")
   .addEventListener("click", function () {

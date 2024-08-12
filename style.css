@@ -239,6 +239,10 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
+video::-webkit-media-controls-start-playback-button {
+  display: none;
+}
+
 .uk-card-default {
   background: rgba(0, 0, 0, 0.7);
   color: white;
